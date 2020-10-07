@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-28 06:30:09 "/>
+        <attribute name="created" value="QUNFUjtET1VHTEFTOzIwMjAtMDgtMjg7IjA1OjU0OjAxICI7MjAwMg=="/>
+        <attribute name="edited" value="QUNFUjtET1VHTEFTOzIwMjAtMDgtMjg7IjA2OjMwOjA5ICI7MjsyMTE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="aprovado" type="Boolean" array="False" size=""/>
+            <declare name="aluno" type="String" array="False" size=""/>
+            <declare name="n1, n2, n3, n4, media" type="Real" array="False" size=""/>
+            <input variable="aluno"/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <input variable="n4"/>
+            <assign variable="media" expression="(n1 + n2 + n3 + n4 ) / 4"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <assign variable="aprovado" expression="true"/>
+                </then>
+                <else>
+                    <assign variable="aprovado" expression="false"/>
+                </else>
+            </if>
+            <output expression="&quot; Nome aluno: &quot; &amp; aluno &amp; &quot; Media: &quot; &amp; media &amp; &quot; Passou: &quot; &amp; aprovado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

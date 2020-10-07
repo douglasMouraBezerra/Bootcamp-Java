@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-28 06:52:32 "/>
+        <attribute name="created" value="QUNFUjtET1VHTEFTOzIwMjAtMDgtMjg7IjA2OjMwOjE1ICI7MjAwMg=="/>
+        <attribute name="edited" value="QUNFUjtET1VHTEFTOzIwMjAtMDgtMjg7IjA2OjUyOjMyICI7MzsyMTE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inicio, limite, const" type="Integer" array="False" size=""/>
+            <assign variable="inicio" expression="1"/>
+            <assign variable="limite" expression="10"/>
+            <assign variable="const" expression="9"/>
+            <while expression="inicio &lt;= limite">
+                <output expression="&quot;9 x &quot; &amp; inicio &amp; &quot; = &quot; &amp; const * inicio" newline="True"/>
+                <assign variable="inicio" expression="inicio + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

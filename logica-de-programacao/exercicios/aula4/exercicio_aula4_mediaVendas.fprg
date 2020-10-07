@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-28 06:06:26 "/>
+        <attribute name="created" value="QUNFUjtET1VHTEFTOzIwMjAtMDgtMjg7IjA1OjU3OjU0ICI7MjAxMw=="/>
+        <attribute name="edited" value="QUNFUjtET1VHTEFTOzIwMjAtMDgtMjg7IjA2OjA2OjI2ICI7MTsyMTE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="funcionario" type="String" array="False" size=""/>
+            <declare name="jan, fev, mar, abr, media" type="Real" array="False" size=""/>
+            <input variable="funcionario"/>
+            <input variable="jan"/>
+            <input variable="fev"/>
+            <input variable="mar"/>
+            <input variable="abr"/>
+            <assign variable="media" expression="(jan + fev + mar + abr ) / 4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media &gt;= 5000">
+                <then>
+                    <output expression="&quot;Voc&#234; recebera um abono de 5%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; receber&#225; um abono de 3%&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

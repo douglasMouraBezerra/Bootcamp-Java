@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-28 05:53:58 "/>
+        <attribute name="created" value="QUNFUjtET1VHTEFTOzIwMjAtMDgtMjg7IjA1OjQ2OjIyICI7MjAwNg=="/>
+        <attribute name="edited" value="QUNFUjtET1VHTEFTOzIwMjAtMDgtMjg7IjA1OjUzOjU4ICI7MjsyMTIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Cliente" type="String" array="False" size=""/>
+            <declare name="cartao" type="Boolean" array="False" size=""/>
+            <declare name="numero" type="String" array="False" size=""/>
+            <input variable="Cliente"/>
+            <input variable="cartao"/>
+            <if expression="cartao">
+                <then>
+                    <input variable="numero"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente a loja somente aceita compras via cartao&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

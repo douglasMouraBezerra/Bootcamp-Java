@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-08-28 06:24:12 "/>
+        <attribute name="created" value="QUNFUjtET1VHTEFTOzIwMjAtMDgtMjg7IjA2OjE3OjIyICI7MjAwNQ=="/>
+        <attribute name="edited" value="QUNFUjtET1VHTEFTOzIwMjAtMDgtMjg7IjA2OjI0OjEyICI7MTsyMTEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstName, lastName" type="String" array="False" size=""/>
+            <output expression="&quot;What's your first name ?&quot;" newline="True"/>
+            <input variable="firstName"/>
+            <output expression="&quot;What's your last name ?&quot;" newline="True"/>
+            <input variable="lastName"/>
+            <output expression="&quot;Seu nome completo e: &quot; &amp; firstname &amp; &quot; &quot; &amp; lastName" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
